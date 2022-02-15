@@ -21,9 +21,12 @@
 </script>
 
 
-<div>
+<div class=" grid grid-cols-3  ">
 {#each files as file (file.name)}
-	<a href="{file.download_url}" target="_blank">{file.name}</a>
+	<a href="{file.download_url}" target="_blank">
+	<div class="m-1 shadow-lg">	{file.name}
+	</div>
+	</a>
 {/each}
 </div>
 	
